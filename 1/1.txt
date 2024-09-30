@@ -1,0 +1,6 @@
+(1) If each child in the circle is given a number to identify them (alike to an index in an array), when the children begin the game and
+    are eventually removed, the 'out' child passes on the potato, leaves, and every child with a number larger than the 'out' child is 
+    decremented by 1. An array is limited here by the complications given by random removal of indexes during the game, as other indexes 
+    are very likely to be affected by this alteration.
+
+(2) Nine DS in the Sally train story
