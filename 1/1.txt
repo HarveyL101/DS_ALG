@@ -4,3 +4,34 @@
     are very likely to be affected by this alteration.
 
 (2) Nine DS in the Sally train story
+
+(3) show the final state of said algorithms
+(a) S1 = Empty, S2 = 13,11,9,7,5,3
+(b) S1 = Empty, S2 = 11,7,3
+
+(4) S1 = 3,2,12,5, S2 = 12,8
+
+(5) determine whether a stack or queue would be more applicable.
+(a) stack
+(b) stack
+(c) queue
+(d) queue
+(e) neither
+(f) queue
+(g) neither
+(h) neither
+(i) queue
+(j) neither
+
+(6) Transfer contents of S1 to S2 using S3 in the SAME order
+while (!S1) {
+    pop(S1, X);
+    push(S3, X);
+} 
+end while loop;
+
+while (!S3) {
+    pop(S3, X);
+    push(S2, X);
+}
+end while loop;
