@@ -35,3 +35,25 @@ while (!S3) {
     push(S2, X);
 }
 end while loop;
+
+PRACTICAL EXCERCISES:
+
+Question 3. Design an algorithm to reverse a queue using stacks and queues.
+(Example: convert queue 12345 into queue 54321)
+
+Answer 3. 
+Q1 - 12345, Q2 - empty, S1 - empty
+
+while (Q1) {
+    Q1.dequeue(X)
+    S1.push(X)
+} end while
+
+if (S1.length == 5) {
+    for (let i=0; i < 4; i++) {
+        S1.pop(X)
+        Q2.enqueue(X)
+    }
+}
+
+
