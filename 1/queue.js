@@ -42,10 +42,15 @@ class Queue {
         }
     }
     peek() {
-        console.log(this.items[this.head]);
-
+        if (this.items[this.head] == this.items[this.tail]) {
+            console.log("Cannot peek at an empty queue");
+        } else {
+            console.log(`The head of the queue is ${this.items[this.head]}`);
+        }
     }
-
+    length() {
+        console.log(`The length of the queue is ${this.items.length}`);
+    }
 }
 
 const q = new Queue();
@@ -56,7 +61,8 @@ for (let i = 0; i < q.max_size; i++) {
 }
 
 q.dequeue();
-
+q.peek();
+q.length();
 
 
 
