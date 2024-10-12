@@ -1,6 +1,6 @@
 let arr = [];
 
-function init(array, max_size, range) {
+const init = (array, max_size, range) => {
 
     //fills array to its max capacity with any whole numbers within range (e.g. 20)
     for (let i=0; i < max_size; i++) {
@@ -14,7 +14,7 @@ function init(array, max_size, range) {
     return this.items;
 }
 
-function sort(array) {
+const sort = array => {
     if (array.length < 2) {
 
         //standard error message

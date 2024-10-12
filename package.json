@@ -4,7 +4,13 @@
   "description": "data structures + algorithms workshop practicals",
   "main": "queue.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "con1": "cd 1",
+    "con2": "cd 2",
+    "rQ": "node queue.js",
+    "rST": "node stack.js",
+    "rSEL": "node selection.js",
+    "rINS": "node insertion.js"
   },
   "repository": {
     "type": "git",
