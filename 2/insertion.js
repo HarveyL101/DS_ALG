@@ -1,7 +1,7 @@
 let arr = [];
 
 const init = (x, max_size, range) => {
-
+    //fills array with random values
     for (let i = 0; i < max_size; i++) {
 
         x.push(Math.floor(Math.random() * range));

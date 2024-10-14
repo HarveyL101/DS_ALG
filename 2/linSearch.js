@@ -1,30 +1,41 @@
 //Algorithm for a linear search
 
-const arr = [];
+let arr = [];
 
 const init = (x, max_size, range) => {
 
     for (let i = 0; i < max_size; i++) {
 
-        x.push(Math.floor(Math.random(range)));
+        x.push(Math.floor(Math.random() * range));
     }
 
     console.log(`Your array to be searched is: ${x}`);
+
+    return x;
 }
 
 const search = (x, val) => {
+    let found = false;
+    let val_idx;
 
+    //iterates through each index, checking for a match to the desired value
     for (let i = 0; i < x.length; i++) {
         if (x[i] === val) {
             
-            console.log(`Your desired value '${val}' is present at index ${x[i]}`);
+            found = true;
+            val_idx = x[i];
+            
+            console.log(`${val} found at index ${i + 1} out of ${x.length}`);
 
-            break;
+            return;
+        } else {
+
+            console.log(`${val} not found at index ${i + 1} out of ${x.length}, continuing...`);
         }
 
-        console.log(`${val} not found at index ${x[i]}, continuing...`);
     }
+
 }
 
-init(arr, 10, 20);
-search(arr, 15);
+init(arr, 8, 10);
+search(arr, 5);
