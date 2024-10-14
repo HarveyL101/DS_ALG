@@ -1,5 +1,6 @@
 //algorithm for a binary search of a sorted array
 
+//currently broken, hate binary search
 const binarySearch = (arr, key) => {
 
     let low = 0;
