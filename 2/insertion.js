@@ -1,6 +1,7 @@
 let arr = [];
 
 const init = (x, max_size, range) => {
+
     //fills array with random values
     for (let i = 0; i < max_size; i++) {
 
@@ -15,6 +16,7 @@ const init = (x, max_size, range) => {
 
 const sort = x => {
 
+    //checking if array is empty before sorting
     if (x.length <= 1) {
 
         console.log("Cannot sort an empty array");
@@ -23,9 +25,11 @@ const sort = x => {
     }
     for (let i = 1; i < x.length; i++) {
 
+        console.log(x);
         let current = x[i];
         j = i;
 
+        //
         while (j > 0 && current < x[j - 1]) {
             x[j] = x[j - 1];
             j -= 1;

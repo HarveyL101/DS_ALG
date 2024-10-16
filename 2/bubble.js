@@ -1,9 +1,9 @@
 let arr = [];
 
 const init = (x, max_size, range) => {
-
+        
+    //fills array with random numbers
     for (let i = 0; i < max_size; i++) {
-
         x.push(Math.floor(Math.random() * range));
     }
 
@@ -21,10 +21,12 @@ const sort = x => {
 
             if (x[j] < x[i]) {
 
+                //higher predecessors have their indexes swapped 
                 temp = x[i];
                 x[i] = x[j];
                 x[j] = temp;
             }
+            //array is untouched if the value in front is higher
         }
     }
 }

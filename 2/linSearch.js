@@ -22,6 +22,7 @@ const search = (x, val) => {
     for (let i = 0; i < x.length; i++) {
         if (x[i] === val) {
             
+            //once found, the loop outputs the index of val and breaks the loop
             found = true;
             val_idx = x[i];
             

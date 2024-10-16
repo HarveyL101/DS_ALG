@@ -50,9 +50,6 @@ const sort = array => {
     }
 }
 
-
-
-
 init(arr, 20, 30);
 sort(arr);
 
