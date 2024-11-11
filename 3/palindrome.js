@@ -1,35 +1,22 @@
-let pal = "winnipeg";
-let pal2 = [];
-pal = Array.from(pal);
+//function to check if a given string is palindromic (the same word back to front)
 
-const init = pal1 => {
-
-    for(let i = 0; i < pal1.length; i++) {
-        copy.unshift(pal1[i]);
+const isPalindromic = str => {
+ 
+    let j = str.length - 1;
+    for (let i = 0; i < str.length / 2; i++) {
+        if (str[i] != str[j]) {
+            return false;
+        }
+        j--;
     }
+    return true;
 }
 
-const palCheck = (pal1, )
+let str1 = "racecar";
+let str2 = "potato";
+let str3 = "poop";
 
-
-console.log(pal);
-console.log(pal2);
-
-let isPal = true;
-
-for(let i = 0; i < pal.length; i++) {
-    if(pal[i] !== pal2[i]) {
-
-        isPal = false;
-        break;
-    } 
-}
-
-if(isPal) {
-    console.log(`${pal} is palindromic.`)
-} else {
-    console.log(`${pal} is NOT palindromic.`);
-}
-
-
+console.log(isPalindromic(str1));
+console.log(isPalindromic(str2));
+console.log(isPalindromic(str3));
 
